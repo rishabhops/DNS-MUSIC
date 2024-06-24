@@ -6,24 +6,25 @@ from pyrogram import filters
 
 load_dotenv()
 
+
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = 10248430 #int(getenv("10248430"))
+API_HASH = "42396a6ff14a569b9d59931643897d0d"
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = "6618122929:AAH3_xWlXb8Ye_VfbY8CxcJBSULz_KFef2U" #getenv("BOT_TOKEN")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://gregorymjenson6:asdjdj@cluster0.0cu5abt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 16000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID"))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001443337704"))
 
+LOGGER_ID = -1001907436368 
+LOG_GROUP_ID =-1001907436368
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID"))
+OWNER_ID = 6203163206
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -33,15 +34,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Rajputshivsingh65/DNS-MUSIC",
+    "https://github.com/rishabhops/DNS-MUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Dns_Official_Channel")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Dns_Official_Channel")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SUKUNA_UPDATE_CHANNEL")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Shizuka_update_group")
 
 # Maximum Limit Allowed for users to save playlists on bot's server
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "100"))
@@ -86,7 +87,7 @@ CLEANMODE_DELETE_MINS = int(
 )  # Remember to give value in Seconds
 
 # Get your pyrogram v2 session from @VIP_STRING_ROBOT on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = "BQFx4q8AJY8DnBnTExgT6HYfFHJMa2Xk3fMKvbNC3oGqRfaD9GNpM_6yGPYSt_G-0aIyMepMVu5pWxdv2wZjoSEXvNn1JozBWM8QBt8TEs-y_UUpl76iGI1XQuo7-9EzW6ePrjAy9jEtcuiwM847nhGKMQo-5d8RDiHfpwa7r-QCekbcLnRszHcWdUN5YP8PBy2j2Vl9b6BRSZTiE2UL4ZHP7fpNyAZJLanGQNtV6QAFMZGviLTC6qj3Z9eOxYh7y7EwMPXSJVMlT0wPdiwImhl_at8pL6YCgC71MUMI1793e9NUKt0d2oTRUXj8lXYcuB-6xvQKRwagYhr4KFiIj3vzF8jVnQAAAAFPrvAtAA" #"BQCcYO4AOC7NPimTcvq7T6XfIiwMQxh9Z6XKRcV8ybMTiZXznqnOdfzpvAYQbCNsCOfWz31wR6pAjGecCP3nojlZOnaqUpbvDXuhQbHLgY9iHn_ikwbuZkUaOAWzBEnair1nZUzONb62bBgFR7XwhVVYhmkWxSHWfvBM6hALc-PkrT5SGBwL5Fz_XcXii5tHzB3UVw5ASkL2YXz9sCh5N2PdOAH8eOjPrWb5NL5wagRBm9kIcAbCIeED725GMCfGRmdvzbdYv9TiS_Q65Qp31KkXVST1Yov07cSd_c6Mh5ATG1t5zX3Ift43lu3-GS9vO0qLW0XZPnpH1ZOaQFFyo8sHXgra6wAAAAFyF4XTAA" #getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -114,13 +115,13 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/8be064de4663788e86535.jpg"
+    "START_IMG_URL", "https://graph.org/file/407b7c3930c1158f1492f.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/b727863499abbc9a6a1e9.jpg"
+    "PING_IMG_URL", "https://graph.org/file/407b7c3930c1158f1492f.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/eacfe007f9907f5854b10.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/1afcb721fa58623413ebb.jpg"
+STATS_IMG_URL = "https://graph.org/file/407b7c3930c1158f1492f.jpg"
 TELEGRAM_AUDIO_URL = "https://telegra.ph/file/eacfe007f9907f5854b10.jpg"
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/eacfe007f9907f5854b10.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/eacfe007f9907f5854b10.jpg"
